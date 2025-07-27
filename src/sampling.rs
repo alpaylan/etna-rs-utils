@@ -8,11 +8,11 @@ pub enum Status {
 }
 
 pub struct SamplingResult {
-    property: String,
-    status: Status,
-    tests: u64,
-    passed: u64,
-    discarded: u64,
+    pub property: String,
+    pub status: Status,
+    pub tests: u64,
+    pub passed: u64,
+    pub discarded: u64,
 }
 
 impl Display for SamplingResult {
